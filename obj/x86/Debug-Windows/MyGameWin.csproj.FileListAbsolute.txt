@@ -1,0 +1,2 @@
+/home/phillip/Downloads/BattleShip/obj/x86/Debug-Windows/MyGameWin.csprojAssemblyReference.cache
+/home/phillip/Downloads/BattleShip/obj/x86/Debug-Windows/MyGameWin.csproj.CoreCompileInputs.cache
