@@ -1,10 +1,13 @@
 
+using System;
+using SwinGameSDK;
+using static SwinGameSDK.SwinGame;
 public static partial class GameMain
 {
     public static void Main()
     {
         // Open the game window
-        OpenGraphicsWindow["GameMain", 800, 600];
+        OpenGraphicsWindow("GameMain", 800, 600);
         ShowSwinGameSplashScreen();
 
         // Run the game loop
@@ -14,11 +17,11 @@ public static partial class GameMain
             ProcessEvents();
 
             // Clear the screen and draw the framerate'
-            ClearScreen[Color.White];
-            DrawFramerate[0, 0];
+            ClearScreen(Color.White);
+            DrawFramerate(0, 0);
 
             // Draw onto the screen
-            RefreshScreen[60];
+            RefreshScreen(60);
         }
 
         // Close any resources we were using
