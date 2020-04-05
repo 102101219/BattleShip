@@ -11,6 +11,7 @@ if [ `uname` = "Darwin" ]; then
     OS=$MAC
 elif [ `uname` = "Linux" ]; then
     OS=$LIN
+    #FIXME Does not work on a linux system
 else
     OS=$WIN
 fi
