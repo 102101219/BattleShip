@@ -38,7 +38,7 @@ fi
 CLEAN="N"
 RELEASE=""
 
-VBNC_FLAGS="-target:winexe -r:./lib/SwinGame.dll -imports:System,SwinGameSDK,SwinGameSDK.SwinGame,System,System.Reflection" #" -r:Microsoft.VisualBasic"
+VBNC_FLAGS="-target:winexe -r:./lib/SwinGame.dll -imports:System,SwinGameSDK,SwinGameSDK.SwinGame,System,System.Reflection,System.Collections.Generic,System.Collections"
 VB_FLAGS="-optimize+ -debug-"
 PLATFORM_FLAGS="-platform:x86"
 SG_INC="-I${APP_PATH}/lib/"
