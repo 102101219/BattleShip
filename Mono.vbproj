@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B55B3543-BA65-4ECB-904F-B534CA4F89DE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SwinGameSDK.GameMain</StartupObject>
+    <RootNamespace>SwinGameSDK</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SwinGame VB Project2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SwinGame VB Project2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <DefineDebug>false</DefineDebug>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SwinGame, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\SwinGame.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Accessibility" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="Color=System.Drawing.Color" />
+    <Import Include="SwinGameSDK" />
+    <Import Include="SwinGameSDK.SwinGame" />
+    <Import Include="System.Reflection" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="src\GameMain.vb" />
+    <Compile Include="src\MenuController.vb" />
+    <Compile Include="src\GameResources.vb" />
+    <Compile Include="src\DeploymentController.vb" />
+    <Compile Include="src\GameState.vb" />
+    <Compile Include="src\GameLogic.vb" />
+    <Compile Include="src\GameController.vb" />
+    <Compile Include="src\EndingGameController.vb" />
+    <Compile Include="src\DiscoveryController.vb" />
+    <Compile Include="src\HighScoreController.vb" />
+    <Compile Include="src\UtilityFunctions.vb" />
+    <Compile Include="src\Model\Ship.vb" />
+    <Compile Include="src\Model\Direction.vb" />
+    <Compile Include="src\Model\AIMediumPlayer.vb" />
+    <Compile Include="src\Model\ShipName.vb" />
+    <Compile Include="src\Model\AttackResult.vb" />
+    <Compile Include="src\Model\Tile.vb" />
+    <Compile Include="src\Model\ResultOfAttack.vb" />
+    <Compile Include="src\Model\AIHardPlayer.vb" />
+    <Compile Include="src\Model\AIOption.vb" />
+    <Compile Include="src\Model\AIPlayer.vb" />
+    <Compile Include="src\Model\BattleShipsGame.vb" />
+    <Compile Include="src\Model\TileView.vb" />
+    <Compile Include="src\Model\SeaGrid.vb" />
+    <Compile Include="src\Model\SeaGridAdapter.vb" />
+    <Compile Include="src\Model\ISeaGrid.vb" />
+    <Compile Include="src\Model\Player.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\SwinGame.dll" />
+    <Content Include="lib\libfreetype-6.dll" />
+    <Content Include="lib\libpng13.dll" />
+    <Content Include="lib\libogg-0.dll" />
+    <Content Include="lib\libtiff-3.dll" />
+    <Content Include="lib\libpng12-0.dll" />
+    <Content Include="lib\jpeg.dll" />
+    <Content Include="lib\SDL_mixer.dll" />
+    <Content Include="lib\libvorbis-0.dll" />
+    <Content Include="lib\SDL_gfx.dll" />
+    <Content Include="lib\smpeg.dll" />
+    <Content Include="lib\zlib1.dll" />
+    <Content Include="lib\SDL_image.dll" />
+    <Content Include="lib\SDL_net.dll" />
+    <Content Include="lib\libvorbisfile-3.dll" />
+    <Content Include="lib\SDL_ttf.dll" />
+    <Content Include="lib\SGSDK.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\SDL.dll" />
+    <Content Include="lib\mikmod.dll" />
+    <Content Include="lib\ogg.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\animations\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\bundles\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\fonts\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\images\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\maps\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\panels\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sounds\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(ProjectDir)lib\*.dll" "$(TargetDir)" /s/y/d/e &lt;NUL: </PostBuildEvent>
+  </PropertyGroup>
+</Project>
