@@ -1,0 +1,2 @@
+/home/phillip/Downloads/BattleShip/obj/x86/Debug/Mono.vbprojAssemblyReference.cache
+/home/phillip/Downloads/BattleShip/obj/x86/Debug/Mono.vbproj.CoreCompileInputs.cache

@@ -15,8 +15,8 @@ internal static partial class EndingGameController
     {
         var toDraw = default(Rectangle);
         string whatShouldIPrint;
-        DrawField[ComputerPlayer.PlayerGrid, ComputerPlayer, true];
-        DrawSmallField[HumanPlayer.PlayerGrid, HumanPlayer];
+        DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, true);
+        DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer);
         toDraw.X = 0;
         toDraw.Y = 250;
         toDraw.Width = SwinGame.ScreenWidth();
@@ -42,7 +42,7 @@ internal static partial class EndingGameController
         if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.VK_RETURN) || SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
 
         {
-            ReadHighScore[HumanPlayer.Score];
+            ReadHighScore(HumanPlayer.Score);
             EndCurrentState();
         }
     }
