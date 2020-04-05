@@ -1,7 +1,8 @@
 /// <summary>
 /// The values that are visable for a given tile.
 /// </summary>
-
+using System;
+using SwinGameSDK;
 public enum TileView
 {
     /// <summary>

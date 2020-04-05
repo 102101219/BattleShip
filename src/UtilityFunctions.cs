@@ -2,6 +2,8 @@
 /// This includes a number of utility methods for
 /// drawing and interacting with the Mouse.
 /// </summary>
+using System;
+using SwinGameSDK;
 using System.Collections.Generic;
 
 internal static partial class UtilityFunctions

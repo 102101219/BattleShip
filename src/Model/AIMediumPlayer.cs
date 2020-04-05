@@ -3,6 +3,8 @@
 /// if it has found a ship
 /// </summary>
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 public partial class AIMediumPlayer : AIPlayer

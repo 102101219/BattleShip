@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using SwinGameSDK;
 
 /// <summary>
@@ -11,7 +12,7 @@ public static partial class GameController
     private static BattleShipsGame _theGame;
     private static Player _human;
     private static AIPlayer _ai;
-    private static Stack _state = new Stack<GameState>();
+    private static System.Collections.Stack _state = new Stack<GameState>();
     private static AIOption _aiSetting;
 
     /// <summary>
@@ -135,7 +136,7 @@ public static partial class GameController
     {
         if (showAnimation)
         {
-            AddExplosion[row, column];
+            AddExplosion(row, column);
         }
 
         Audio.PlaySoundEffect(GameSound["Hit"]);

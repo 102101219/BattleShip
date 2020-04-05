@@ -1,4 +1,5 @@
-
+using System;
+using SwinGameSDK;
 internal static partial class GameLogic
 {
     public static void Main()

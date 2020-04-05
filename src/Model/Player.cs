@@ -282,4 +282,9 @@ public partial class Player : IEnumerable<Ship>
             while (!placementSuccessful);
         }
     }
+
+    IEnumerator<Ship> IEnumerable<Ship>.GetEnumerator ()
+    {
+        throw new NotImplementedException ();
+    }
 }

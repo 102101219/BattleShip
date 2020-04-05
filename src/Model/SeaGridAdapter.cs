@@ -3,6 +3,7 @@
 /// presented it changes the view into a sea tile instead of a ship tile.
 /// </summary>
 using System;
+using SwinGameSDK;
 
 public partial class SeaGridAdapter : ISeaGrid
 {
@@ -74,6 +75,8 @@ public partial class SeaGridAdapter : ISeaGrid
             return _MyGrid.Height;
         }
     }
+
+    public TileView Item => throw new NotImplementedException ();
 
     /// <summary>
     /// HitTile calls oppon _MyGrid to hit a tile at the row, col

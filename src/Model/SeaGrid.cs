@@ -90,10 +90,12 @@ public partial class SeaGrid : ISeaGrid
         }
     }
 
+    public TileView Item => throw new NotImplementedException ();
+
     /// <summary>
     /// SeaGrid constructor, a seagrid has a number of tiles stored in an array
     /// </summary>
-    public SeaGrid(Dictionary<ShipName, Ship> ships)
+    public SeaGrid (Dictionary<ShipName, Ship> ships)
     {
         // fill array with empty Tiles
         int i;
